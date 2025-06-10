@@ -23,7 +23,6 @@
  */
 
 import Foundation
-import WCDB_Private
 
 internal final class ObjectBridge {
 

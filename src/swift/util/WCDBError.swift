@@ -19,7 +19,6 @@
  */
 
 import Foundation
-import WCDB_Private
 
 public struct ErrorValue {
     public enum ErrorValueType {
