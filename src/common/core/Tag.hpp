@@ -50,8 +50,12 @@ private:
 
 } // namespace WCDB
 
-namespace std {
+namespace WCDB {
+
+template<typename T>
+struct is_tag_integral : std::is_integral<T> {};
+
 template<>
-struct is_integral<WCDB::Tag> : public std::true_type {
-};
-} // namespace std
+struct is_tag_integral<Tag> : std::true_type {};
+
+} // namespace WCDB
